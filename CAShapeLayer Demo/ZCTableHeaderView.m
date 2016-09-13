@@ -8,6 +8,22 @@
 
 #import "ZCTableHeaderView.h"
 
+
+
+@interface ZCTableHeaderView () 
+
+//定时器(方法执行下一帧该绘制的路径)
+@property (nonatomic, strong) CADisplayLink *timer;
+
+//CAShapeLayer
+@property (nonatomic, strong) CAShapeLayer *sinShapeLayer;
+
+@property (nonatomic, strong) CAShapeLayer *cosShapeLayer;
+
+
+
+@end
+
 @implementation ZCTableHeaderView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -20,12 +36,12 @@
         self.waveCurvature = 1.5;
         self.waveHeight = 7;
         
-        //添加 layer
-        [self.layer addSublayer:self.sinShapeLayer];
-        [self.layer addSublayer:self.cosShapeLayer];
-        
         //添加头像~
         [self addSubview:self.iconImageView];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickToshowIcon)];
+        self.iconImageView.userInteractionEnabled = YES;
+        [self.iconImageView addGestureRecognizer:tap];
         
         //去除底边颜色
         [self.layer addSublayer:self.bottomLayer];
@@ -93,15 +109,20 @@
 }
 
 
-- (void)setIconImage:(UIImage *)iconImage {
+- (void)initShapeLayer {
+    
+    //添加 layer
+    [self.layer addSublayer:self.sinShapeLayer];
+    [self.layer addSublayer:self.cosShapeLayer];
 
-    [_iconImageView setImage:iconImage];
-
+    
 }
+
 
 
 - (void)beginWave
 {
+    
     //一个推一个
     self.offset += self.waveSpeed;
     
@@ -125,7 +146,6 @@
         CGPathAddLineToPoint(sinpath, NULL, x, y);
         CGPathAddLineToPoint(cospath, NULL, x, -y);
     }
-    
     
     //头像坐标
     CGFloat centerY;
@@ -151,21 +171,47 @@
     
 }
 
+- (void)setIconImage:(UIImage *)iconImage {
+    
+    [_iconImageView setImage:iconImage];
+    
+}
+
+- (void)setCurrentAnimate:(BOOL)currentAnimate {
+    
+    _currentAnimate = currentAnimate;
+}
+
+
+
 - (void)startAnimation {
     
+     [self initShapeLayer];
     //CADisplayLink 用法:加入到NSRunLoop中
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(beginWave)];
     [self.timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    self.currentAnimate = YES;
 
     
 }
 
 - (void)stopAnimation {
     
+    
     [self.timer invalidate];
     self.timer = nil;
     [self.sinShapeLayer removeFromSuperlayer];
     [self.cosShapeLayer removeFromSuperlayer];
+    
+    self.iconImageView.frame = CGRectMake(self.frame.size.width/2 - self.iconImageView.frame.size.width/2, self.frame.size.height-self.iconImageView.frame.size.height, 70, 70);
+    
+    self.currentAnimate = NO;
+    
+}
+
+- (void)clickToshowIcon {
+    
+    [self.delegate notifyShowIcon];
     
 }
 

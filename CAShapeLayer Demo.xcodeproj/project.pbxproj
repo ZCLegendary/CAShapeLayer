@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F4024D81D879B7B0075F311 /* ZCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */; };
+		1F4024E11D87D8AD0075F311 /* PushAnimationType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4024E01D87D8AD0075F311 /* PushAnimationType.m */; };
+		97213EC3A96690628C3C78D2 /* libPods-CAShapeLayer Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F68746208F77CAA8FA790BD /* libPods-CAShapeLayer Demo.a */; };
 		C3D635281D86E05D00DF0FC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D635271D86E05D00DF0FC3 /* main.m */; };
 		C3D6352B1D86E05D00DF0FC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D6352A1D86E05D00DF0FC3 /* AppDelegate.m */; };
 		C3D6352E1D86E05D00DF0FC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D6352D1D86E05D00DF0FC3 /* ViewController.m */; };
@@ -39,6 +41,11 @@
 /* Begin PBXFileReference section */
 		1F4024D61D879B7B0075F311 /* ZCTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableHeaderView.h; sourceTree = "<group>"; };
 		1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableHeaderView.m; sourceTree = "<group>"; };
+		1F4024DF1D87D8AD0075F311 /* PushAnimationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimationType.h; sourceTree = "<group>"; };
+		1F4024E01D87D8AD0075F311 /* PushAnimationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimationType.m; sourceTree = "<group>"; };
+		367FBBEE302BC7CFE3EE53CA /* Pods-CAShapeLayer Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShapeLayer Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CAShapeLayer Demo/Pods-CAShapeLayer Demo.release.xcconfig"; sourceTree = "<group>"; };
+		6F68746208F77CAA8FA790BD /* libPods-CAShapeLayer Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CAShapeLayer Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C4A006CF0882223FC5582 /* Pods-CAShapeLayer Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShapeLayer Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAShapeLayer Demo/Pods-CAShapeLayer Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D635231D86E05D00DF0FC3 /* CAShapeLayer Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAShapeLayer Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D635271D86E05D00DF0FC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D635291D86E05D00DF0FC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97213EC3A96690628C3C78D2 /* libPods-CAShapeLayer Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4024E21D87D9EA0075F311 /* ZCHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				1F4024D61D879B7B0075F311 /* ZCTableHeaderView.h */,
+				1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */,
+			);
+			name = ZCHeaderView;
+			sourceTree = "<group>";
+		};
+		1F4024E31D87DA010075F311 /* PublicMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1F4024DF1D87D8AD0075F311 /* PushAnimationType.h */,
+				1F4024E01D87D8AD0075F311 /* PushAnimationType.m */,
+			);
+			name = PublicMethod;
+			sourceTree = "<group>";
+		};
+		7E09CBC3DAA87E2724C2F877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C4A006CF0882223FC5582 /* Pods-CAShapeLayer Demo.debug.xcconfig */,
+				367FBBEE302BC7CFE3EE53CA /* Pods-CAShapeLayer Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3D6351A1D86E05D00DF0FC3 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +125,8 @@
 				C3D6353F1D86E05D00DF0FC3 /* CAShapeLayer DemoTests */,
 				C3D6354A1D86E05D00DF0FC3 /* CAShapeLayer DemoUITests */,
 				C3D635241D86E05D00DF0FC3 /* Products */,
+				7E09CBC3DAA87E2724C2F877 /* Pods */,
+				DC6B56980D896104BDD7A592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +143,12 @@
 		C3D635251D86E05D00DF0FC3 /* CAShapeLayer Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1F4024E31D87DA010075F311 /* PublicMethod */,
+				1F4024E21D87D9EA0075F311 /* ZCHeaderView */,
 				C3D635291D86E05D00DF0FC3 /* AppDelegate.h */,
 				C3D6352A1D86E05D00DF0FC3 /* AppDelegate.m */,
 				C3D6352C1D86E05D00DF0FC3 /* ViewController.h */,
 				C3D6352D1D86E05D00DF0FC3 /* ViewController.m */,
-				1F4024D61D879B7B0075F311 /* ZCTableHeaderView.h */,
-				1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */,
 				C3D6352F1D86E05D00DF0FC3 /* Main.storyboard */,
 				C3D635321D86E05D00DF0FC3 /* Assets.xcassets */,
 				C3D635341D86E05D00DF0FC3 /* LaunchScreen.storyboard */,
@@ -148,6 +185,14 @@
 			path = "CAShapeLayer DemoUITests";
 			sourceTree = "<group>";
 		};
+		DC6B56980D896104BDD7A592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F68746208F77CAA8FA790BD /* libPods-CAShapeLayer Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D635501D86E05D00DF0FC3 /* Build configuration list for PBXNativeTarget "CAShapeLayer Demo" */;
 			buildPhases = (
+				2DD614956863B5D9E10353CE /* [CP] Check Pods Manifest.lock */,
 				C3D6351F1D86E05D00DF0FC3 /* Sources */,
 				C3D635201D86E05D00DF0FC3 /* Frameworks */,
 				C3D635211D86E05D00DF0FC3 /* Resources */,
+				FD30FE39F792CADF5EDE8F65 /* [CP] Embed Pods Frameworks */,
+				FECCB475854C3A24CB5F5A1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +263,7 @@
 				TargetAttributes = {
 					C3D635221D86E05D00DF0FC3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F3WXZX5BDG;
 					};
 					C3D6353B1D86E05D00DF0FC3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -274,11 +323,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DD614956863B5D9E10353CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD30FE39F792CADF5EDE8F65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAShapeLayer Demo/Pods-CAShapeLayer Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECCB475854C3A24CB5F5A1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAShapeLayer Demo/Pods-CAShapeLayer Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3D6351F1D86E05D00DF0FC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4024E11D87D8AD0075F311 /* PushAnimationType.m in Sources */,
 				C3D6352E1D86E05D00DF0FC3 /* ViewController.m in Sources */,
 				C3D6352B1D86E05D00DF0FC3 /* AppDelegate.m in Sources */,
 				C3D635281D86E05D00DF0FC3 /* main.m in Sources */,
@@ -421,23 +519,31 @@
 		};
 		C3D635511D86E05D00DF0FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6C4A006CF0882223FC5582 /* Pods-CAShapeLayer Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CAShapeLayer Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZC.CAShapeLayer-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		C3D635521D86E05D00DF0FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367FBBEE302BC7CFE3EE53CA /* Pods-CAShapeLayer Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CAShapeLayer Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZC.CAShapeLayer-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

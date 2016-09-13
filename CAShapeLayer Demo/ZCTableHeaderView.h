@@ -8,16 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZCTableHeaderView : UIView
+
+@protocol ShowIconImageViewDelegate <NSObject>
+
+@required
+
+- (void)notifyShowIcon;
+
+@end
 
 
-//定时器(方法执行下一帧该绘制的路径)
-@property (nonatomic, strong) CADisplayLink *timer;
-
-//CAShapeLayer
-@property (nonatomic, strong) CAShapeLayer *sinShapeLayer;
-
-@property (nonatomic, strong) CAShapeLayer *cosShapeLayer;
+@interface ZCTableHeaderView : UIView 
 
 
 //f(x) = waveHeight * sin(waveCurvature * x + waveSpeed)
@@ -39,8 +40,14 @@
 //底边 layer
 @property (nonatomic, strong) CALayer *bottomLayer;
 
+//动画是否在进行
+@property (nonatomic, assign) BOOL currentAnimate;
+
+
+@property (nonatomic, assign) id<ShowIconImageViewDelegate>delegate;
 
 @property (nonatomic, assign) CGFloat offset;
+
 
 
 
@@ -53,6 +60,8 @@
  */
 - (void)setIconImage:(UIImage *)iconImage;
 
+
+- (void)setCurrentAnimate:(BOOL)currentAnimate;
 
 /**
  *
@@ -67,5 +76,7 @@
  *
  */
 - (void)stopAnimation;
+
+
 
 @end
