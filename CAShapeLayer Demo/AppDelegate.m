@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
+<<<<<<< HEAD
 #import "ViewController.h"
+=======
+>>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 
 @interface AppDelegate ()
 
@@ -18,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+<<<<<<< HEAD
     
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -34,6 +38,8 @@
     self.window.rootViewController = navi;
     
     
+=======
+>>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
     return YES;
 }
 
