@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		1F4024D81D879B7B0075F311 /* ZCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */; };
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 		C3D635281D86E05D00DF0FC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D635271D86E05D00DF0FC3 /* main.m */; };
 		C3D6352B1D86E05D00DF0FC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D6352A1D86E05D00DF0FC3 /* AppDelegate.m */; };
 		C3D6352E1D86E05D00DF0FC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D6352D1D86E05D00DF0FC3 /* ViewController.m */; };
@@ -40,11 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		1F4024D61D879B7B0075F311 /* ZCTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableHeaderView.h; sourceTree = "<group>"; };
 		1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableHeaderView.m; sourceTree = "<group>"; };
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 		C3D635231D86E05D00DF0FC3 /* CAShapeLayer Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAShapeLayer Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D635271D86E05D00DF0FC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D635291D86E05D00DF0FC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,16 +106,12 @@
 		C3D635251D86E05D00DF0FC3 /* CAShapeLayer Demo */ = {
 			isa = PBXGroup;
 			children = (
-				C3D635591D86E0C200DF0FC3 /* p.png */,
 				C3D635291D86E05D00DF0FC3 /* AppDelegate.h */,
 				C3D6352A1D86E05D00DF0FC3 /* AppDelegate.m */,
 				C3D6352C1D86E05D00DF0FC3 /* ViewController.h */,
 				C3D6352D1D86E05D00DF0FC3 /* ViewController.m */,
-<<<<<<< HEAD
 				1F4024D61D879B7B0075F311 /* ZCTableHeaderView.h */,
 				1F4024D71D879B7B0075F311 /* ZCTableHeaderView.m */,
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 				C3D6352F1D86E05D00DF0FC3 /* Main.storyboard */,
 				C3D635321D86E05D00DF0FC3 /* Assets.xcassets */,
 				C3D635341D86E05D00DF0FC3 /* LaunchScreen.storyboard */,
@@ -134,6 +124,7 @@
 		C3D635261D86E05D00DF0FC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3D635591D86E0C200DF0FC3 /* p.png */,
 				C3D635271D86E05D00DF0FC3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -291,10 +282,7 @@
 				C3D6352E1D86E05D00DF0FC3 /* ViewController.m in Sources */,
 				C3D6352B1D86E05D00DF0FC3 /* AppDelegate.m in Sources */,
 				C3D635281D86E05D00DF0FC3 /* main.m in Sources */,
-<<<<<<< HEAD
 				1F4024D81D879B7B0075F311 /* ZCTableHeaderView.m in Sources */,
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,10 +506,7 @@
 				C3D635521D86E05D00DF0FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-<<<<<<< HEAD
 			defaultConfigurationName = Release;
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 		};
 		C3D635531D86E05D00DF0FC3 /* Build configuration list for PBXNativeTarget "CAShapeLayer DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -530,10 +515,7 @@
 				C3D635551D86E05D00DF0FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-<<<<<<< HEAD
 			defaultConfigurationName = Release;
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 		};
 		C3D635561D86E05D00DF0FC3 /* Build configuration list for PBXNativeTarget "CAShapeLayer DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,10 +524,7 @@
 				C3D635581D86E05D00DF0FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-<<<<<<< HEAD
 			defaultConfigurationName = Release;
-=======
->>>>>>> 90fa62db47951261d55daf7a84d8b3890570978e
 		};
 /* End XCConfigurationList section */
 	};
